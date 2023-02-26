@@ -1,0 +1,31 @@
+// Lect10_10.3_W7.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+float Input(float a, float b, float c)
+{
+	
+	cout << "Enter three sides of triangle : ";
+	cin >> a >> b >> c;
+	return a,b,c;
+}
+float Area(float a, float b, float c)
+{
+	
+	s = (a + b + c) / 2;
+	Area = sqrt(s * (s - a) * (s - b) * (s - c));
+	cout << "Area of triangle is : " << Area;
+}
+
+int main()
+{
+	float c, d, e;
+	Input(c,d,e);
+	Area(c,d,e);
+	
+}
