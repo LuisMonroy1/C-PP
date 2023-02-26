@@ -1,0 +1,54 @@
+// Lect4_8.31_W2.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+/*
+
+int addition(int a, int b);
+
+int main()
+{
+    //Intigers
+    int n1, n2, add;
+
+    //To ask the compilor
+    cout << "Enter First number: ";
+    //To store the value 
+    cin >> n1;
+
+    cout << "Enter Second number: ";
+    cin >> n2;
+
+    //Calling the function add
+    add = addition (n1, n2);
+
+    //To display the result after the function is finished
+    cout << "Addition is: " << add<<endl;
+
+    return 0;
+
+}
+
+//To define the function
+int addition(int a, int b)
+{
+    return (a + b);
+}
+
+*/
+
+void myFunction(string fname, int age)
+{
+    cout << fname << " Refsnes " << age << " years old. \n";
+}
+
+int main()
+{
+    myFunction("Liam", 3);
+    myFunction("Jenny", 14);
+    myFunction("Anya", 30);
+
+    return 0;
+}
