@@ -1,0 +1,72 @@
+// Lect1_8.24_W1.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+
+
+//Enables programs to output data to the screen
+#include <iostream>
+//to not include std everytime
+//using namespace std;
+
+int main()
+{
+    //To display the message
+    //We use "\n" to leave a space after
+    //std::cout << "Welcome to C++\n";
+    
+
+    //SUM
+    {
+        //Intigers
+        int a, b, c;
+        //To display the question 
+        std::cout << "Value of a:";
+        //To get input from compilor
+        std::cin >> a;
+
+        std::cout << "Value of b:";
+        std::cin >> b;
+
+        c = a + b;
+
+        //To display the sum
+        std::cout << "The sum of a+b is:" << c;
+        std::cout << "\n";
+    }
+
+    //SUBTRACTION
+    {
+        //Intigers
+        int d, e, f;
+        //To display the question 
+        std::cout << "Value of d:";
+        //To get input from compilor
+        std::cin >> d;
+
+        std::cout << "Value of e:";
+        std::cin >> e;
+
+        f = d - e;
+        //To display the subtraction
+
+        std::cout << "The subtraction of d-e is:" << f;
+        std::cout << "\n";
+    }
+
+    //MULTIPLICATION
+    {
+        //Intigers
+        int g, h, i;
+        //To display the question 
+        std::cout << "Value of g:";
+        //To get input from compilor
+        std::cin >> g;
+
+        std::cout << "Value of h:";
+        std::cin >> h;
+
+        i = g * h;
+        //To display the multiplication
+
+        std::cout << "The multiplication of g*h is:" << i;
+        std::cout << "\n";
+    }
+}
