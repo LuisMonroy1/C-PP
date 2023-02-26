@@ -1,0 +1,31 @@
+// Lect11_10.5_W7.2_CharacterAphabet.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include<iostream>
+#include<cctype>
+using namespace std;
+
+//First Function
+void input(char& ch)
+{
+	cout << "Enter any character :";
+	cin >> ch;
+}
+char CH(char& ch)
+{
+	char CH = getchar();
+	if (isalpha(ch))
+		cout << "Alphabet - " << ch;
+	else if (isdigit(ch))
+		cout << "Number - " << ch;
+	else
+		cout << "Special Character - " << ch;
+	return CH;
+}
+
+int main()
+{
+	char ch;
+	input(ch);
+	CH(ch);
+}
