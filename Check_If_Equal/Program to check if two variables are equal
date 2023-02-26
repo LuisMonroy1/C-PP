@@ -1,0 +1,61 @@
+// Lect3_8.29_W2.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+/*
+{
+    //Intigers
+    int a, b, R, L;
+    
+    //To display the question 
+    std::cout << "Value of a:";
+    //To get input from compilor
+    std::cin >> a;
+
+    std::cout << "Value of b:";
+    std::cin >> b;
+
+    L = (a+b)*(a+b);
+    R = (a * a) + (b * b) + (2 * a * b);
+
+    if (L == R)
+    {
+        std::cout << "These two are equal";
+        std::cout << "\n";
+    }
+    else
+    {
+        std::cout << "These two not are equal";
+        std::cout << "\n";
+    }
+
+}
+*/
+{
+    //String
+    string a, b;
+    //std::string a, b;
+
+    //To display the question 
+    std::cout << "String of a:";
+    //To get input from compilor
+    std::cin >> a;
+
+    std::cout << "String of b:";
+    std::cin >> b;
+
+
+    if (a == b)
+    {
+        std::cout << "These two are equal";
+        std::cout << "\n";
+    }
+    else
+    {
+        std::cout << "These two not are equal";
+        std::cout << "\n";
+    }
+}
