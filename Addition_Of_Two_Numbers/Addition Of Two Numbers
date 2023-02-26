@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int a,b,c; //define variables
+//a = 3;
+std::cin << a;
+//b = 4;
+std::cin << b;
+c= a+b;
+std::cout << "Addition of two is" << c;
+
+}
