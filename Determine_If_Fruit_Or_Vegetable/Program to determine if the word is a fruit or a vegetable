@@ -1,0 +1,94 @@
+// Lect6_9.12_W4.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+class fruit {
+    //Access Specifier
+public:
+    //Data numbers for fruit class
+    string fruittype1 = "Apple";
+    string fruittype2 = "Orange";
+    string fruittype3 = "Grapes";
+    string fruittype4 = "Bannana";
+    string fruittype5 = "Strawberrie";
+    void display_fruittype ()
+    {
+    int type1;
+    cout << "\nSelect: \n0=Apple \n1=Orange \n2=Grapes \n3=Bannana \n4=Strawberrie\n";
+    cin >> type1;
+
+    switch (type1)
+    {
+    case 0:
+        cout << "Apple is a fruit\n";
+        break;
+    case 1:
+        cout << "Orange is a fruit\n";
+        break;
+    case 2:
+        cout << "Grapes is a fruit\n";
+        break;
+    case 3:
+        cout << "Bannana is a fruit\n";
+        break;
+    case 4:
+        cout << "Strawberries is a fruit\n";
+        break;
+    default:
+        cout << "Input entered is not in fruits\n";
+        break;
+    }
+    }
+
+};
+class vegetable{
+    //Access Specifier
+public:
+    //Data numbers for veggie class
+    string veggietype1 = "Spinach";
+    string veggietype2 = "Lettuce";
+    string veggietype3 = "Carrots";
+    string veggietype4 = "Potatoes";
+    string veggietype5 = "Cabbage";
+    void display_vegetabletype()
+    {
+        int type;
+        cout << "Select: \n0=Spinach \n1=Lettuce \n2=Carrots \n3=Potatoes \n4=Cabbage\n";
+        cin >> type;
+
+        switch (type)
+        {
+        case 0:
+            cout << "spinach is a vegetable\n";
+            break;
+        case 1:
+            cout << "Lettuce is a vegetable\n";
+            break;
+        case 2:
+            cout << "Carrots is a vegetable\n";
+            break;
+        case 3:
+            cout << "Potatoes is a vegetable\n";
+            break;
+        case 4:
+            cout << "Cabbage is a vegetable\n";
+            break;
+        default:
+            cout << "Input entered is not in vegetables\n";
+            break;
+        }
+    }
+
+};
+
+int main()
+{
+    vegetable type;
+    fruit type1;
+
+
+    type.display_vegetabletype();
+    type1.display_fruittype();
+}
