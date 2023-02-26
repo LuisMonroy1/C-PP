@@ -1,0 +1,46 @@
+// Lect7_9.14_W4.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+	//intigers = data numbers
+	// constructor = private
+	// private = access specifier
+	// objects = number functions
+	// how to define nuumber func? using scope operator
+	// ojcet is ("class name" "object name")
+
+class Rectangle {
+public:
+	float length, breadth;
+
+	// Declaration of Construction
+public:
+	Rectangle() {
+		cout << "\n\n ************** Inside the Constructor ************** \n\n";
+		length = 2;
+		breadth = 4;
+
+	}
+	// Declaration of Destrcutor
+public:
+	~Rectangle() {
+		cout << "\n\n ************** Inside the Destructor ************** \n\n";
+	}
+
+
+};
+
+int main()
+{
+	cout << "\n\n Practising Constructor and Destructor in class:-) \n\n\n";
+	cout << "************** Program to demonstrate the concept of constructor and destructor ************** \n\n";
+	cout << "Calling the default Constructor of the Rectangle class to initialize the object \n\n";
+
+	Rectangle rect;
+
+	cout << "\n The length of the Rectangle set by the constructor is = " << rect.length << "\n\n";
+	cout << "\n The Breadth of the Rectangle set by the constructor is = " << rect.breadth << "\n\n";
+
+	return 0;
+}
