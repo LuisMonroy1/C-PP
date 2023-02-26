@@ -1,0 +1,45 @@
+// Lect9_9.28_W6.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int square_root(int a)
+{
+	sqrt(a);
+
+}
+
+int equ(int x1, int x2, int y1, int y2)
+{
+	float res = square_root((pow(x1 - x2,2) + (pow(y1 - y2,2))));
+	// we use pow to raise to the power of two
+	return res;
+	
+}
+
+int main()
+{
+	int x1,x2,y1,y2;
+	cout << "Write the first number: \n";
+	cin >> x1;
+	cout << "Write the second number: \n";
+	cin >> x2;
+	cout << "Write the third number: \n";
+	cin >> y1;
+	cout << "Write the fourth number: \n";
+	cin >> y2;
+
+	
+	//int res = square_root(x1,x2,y1,y2);
+	//Calling the function
+
+	cout << "\nThe root is= ";
+	cout << equ(x1, x2, y1, y2);
+
+
+
+
+
+};
