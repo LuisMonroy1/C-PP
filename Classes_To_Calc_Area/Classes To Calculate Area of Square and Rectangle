@@ -1,0 +1,97 @@
+// Lect5_9.7_W3.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+
+// class to calculate the area of rectangle
+class Rectangle
+    // created a class called rectangle
+{
+public:
+    int Length;
+    int Height;
+    // variables for Height and Length
+};
+// class to calculate the area of triangle
+class Triangle
+    // created a class called triangle
+{
+public:
+    int Length;
+    int Height;
+    // variables for Height and Length
+};
+// class to calculate the area of Square
+class Square
+    // created a class called square
+{
+public:
+    int Length;
+    int Height;
+    // variables for Height and Length
+};
+
+int main()
+{
+    int figure;
+    cout << "Select from the Menu below to calculate Area and Perimeter:\n1=Rectangle \n2=Triangle \n3=Square\n: ";
+    cin >> figure;
+
+    switch (figure)
+    {
+    case 1:
+    {
+        Rectangle obj1;
+        // object inside the class
+
+        cout << "Enter the Length: ";
+        cin >> obj1.Length;
+        cout << "Enter the Height: ";
+        cin >> obj1.Height;
+
+        int areaR = obj1.Length * obj1.Height;
+        cout << "The area of the rectangle is: " << areaR;
+        int perimiterR = (obj1.Length + obj1.Height + obj1.Length + obj1.Height);
+        cout << "\nThe perimiter of the rectangle is: " << perimiterR;
+    }
+        break;
+    case 2:
+    {
+        Triangle obj2;
+        // object inside the class
+
+        cout << "Enter the Length: ";
+        cin >> obj2.Length;
+        cout << "Enter the Height: ";
+        cin >> obj2.Height;
+
+        int areaT = (obj2.Length * obj2.Height / 2);
+        cout << "The area of the triangle is: " << areaT;
+        int perimiterT = (obj2.Length + obj2.Length + obj2.Length);
+        cout << "\nThe perimiter of the tringle is: " << perimiterT;
+    }
+        break;
+    case 3:
+    {
+        Square obj3;
+        // object inside the class
+
+        cout << "Enter the Length: ";
+        cin >> obj3.Length;
+        cout << "Enter the Height: ";
+        cin >> obj3.Height;
+
+        int areaS = obj3.Length * obj3.Height;
+        cout << "The area of the square is: " << areaS;
+        int perimiterS = (obj3.Length + obj3.Height + obj3.Length + obj3.Height);
+        cout << "\nThe perimiter of the square is: " << perimiterS;
+    }
+        break;
+    default:
+        cout << "Please type (1=Rectangle, 2=Triangle, 3=Square)";
+        break;
+    }
+
+}
