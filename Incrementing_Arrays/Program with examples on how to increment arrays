@@ -1,0 +1,34 @@
+// Lect15_11.2_W11.2_StructureEx.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+
+struct MyBox
+{
+    int length, breadth, height;
+};
+
+void dimension(MyBox M)
+{
+    cout << M.length << "x" << M.breadth << "x";
+    cout << M.height << endl;
+}
+
+int main()
+{
+    MyBox B1 = { 10, 15, 5 }, B2, B3;
+    ++B1.height; //incrementing before
+    dimension(B1);
+    B3 = B1;
+    ++B3.length; //incrementing before
+    B3.breadth++; //incrementing afet
+    dimension(B3);
+    B2 = B3;
+    B2.height += 5;
+    B2.length--; //subtracting after
+    dimension(B2);
+
+    return 0;
+}
