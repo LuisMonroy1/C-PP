@@ -1,0 +1,25 @@
+// Lect12_10.12_W8.2_ArrayToCalc3Numb.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int product(int counter)
+{
+	int int_val = 1;
+	int val_array[3]; //Initialazing the array
+	cout << "Please enter three numbers that you want to multiply" << endl;
+	for (counter = 0; counter < 3; counter++)
+	{
+		cin >> val_array[counter];
+		int_val = int_val * val_array[counter];
+	}
+	cout << "Product of these three numbers is = " << int_val;
+	return int_val;
+}
+
+int main()
+{
+	product(3);
+}
