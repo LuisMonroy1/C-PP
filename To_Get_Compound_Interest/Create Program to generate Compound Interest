@@ -1,0 +1,30 @@
+// Lect11_10.5_W7.2_CompoundInterest.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+//First Function
+void input(float& P, float& R, float& T)
+{
+	cout << "Enter Principal, Rate and Time : ";
+	cin >> P >> R >> T;
+}
+//Second Function
+float CI(float& P, float& R, float& T)
+{
+	float CI;
+	CI = P * pow((1 + R / 100), T) - P; //Compount interest formula
+	cout << "Compound Interest is : " << CI;
+	return CI;
+}
+
+int main()
+{
+	float P, R, T;
+	input(P, R, T);
+	CI(P, R, T);
+
+	
+}
