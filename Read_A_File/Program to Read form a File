@@ -1,0 +1,42 @@
+// Lect20_11.21_W14.1_ReadingFromFile.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+int main()
+{
+	//To open and write on the file
+	ofstream myfile("new_file.txt");
+	if (myfile.is_open())
+	{
+		myfile << "Adding new stuff \n";
+		myfile << "This is another stuff that i want to write in this file. \n";
+		myfile.close();
+	}
+	else
+	{
+		cout << "Unable to open the file";
+	}
+
+	// To read the file
+	fstream new_file;
+	new_file.open("new_file.txt", ios::in);
+	if (!new_file)
+	{
+		cout << "No such file";
+	}
+	else
+	{
+		string ch;
+		while (!new_file.eof())
+		{
+			getline(new_file, ch, ' '); //This is to get the outpur with spaces
+			cout << ch;
+		}
+		new_file.close();
+	}
+	return 0;
+}
