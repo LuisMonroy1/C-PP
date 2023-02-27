@@ -1,0 +1,54 @@
+// Lect12_10.10_W7.2_Calculator.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include<cctype>
+using namespace std;
+
+
+
+double Add(double a, double b)
+{
+	return a + b;
+}
+double Sub(double a, double b)
+{
+	return a - b;
+}
+double Mul(double a, double b)
+{
+	return a * b;
+}
+double Div(double a, double b)
+{
+	return a / b;
+}
+int calc()
+{
+	int a,b,d;
+	cout << "Enter two numbers :";
+	cin >> a >> b;
+	cout << "Select one (1=Add, 2=Subtract, 3=Multiplication, 4=Divide) :";
+	cin >> d;
+	if (d == 1)
+	{
+		Add(a,b);
+	}
+	else if (d == 2)
+	{
+		Sub(a, b);
+	}
+	else if (d == 3)
+	{
+		Mul(a, b);
+	}
+	else if (d == 4)
+	{
+		Div(a, b);
+	}
+}
+
+int main()
+{
+	calc();
+}
