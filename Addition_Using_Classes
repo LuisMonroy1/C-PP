@@ -1,0 +1,38 @@
+// Lect19_11.16_W13.2_ExAbstraction_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+class Sum 
+{
+public:
+	// constructor
+	Sum(int i = 0) 
+	{
+		total = i;
+	}
+	// interface to outside world
+	void add(int num) 
+	{
+		total += num;
+	}
+	// interface to outside world
+	int Total() 
+	{
+		return total;
+	};
+private:
+	// hidden data from outside world
+	int total;
+};
+int main() 
+{
+	Sum s,s1,s2;
+	s.add(10);
+	s1.add(40);
+	s2.add(30);
+	cout << "The total is:" << s1.Total() <<
+		endl;
+	return 0;
+}
