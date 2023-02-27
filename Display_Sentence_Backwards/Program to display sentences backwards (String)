@@ -1,0 +1,40 @@
+// Lect13_10.26_W10.2_PrintStrBackw.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include<iostream>
+using namespace std;
+
+void count(char S[])
+{
+    int words = 0;
+    for (int i=0; S[i]!='\0'; i++)
+    {
+        if (S[i] == ' ')
+            //Checking for spaces
+            words++;
+    }
+    cout << "The number of words: " <<words+1 << endl;
+}
+
+void backwards(char Q[])
+{
+    int l, i;
+    for (l = 0; Q[l] != '\0'; l++); //Loop to find length
+        cout << "The length of the string is: " << l << endl;
+    for (i=l-1; i >= 0; i--)
+        //Loop to display the string backwards
+       
+        cout << Q[i];
+}
+
+int main()
+{
+    char str[80];
+    cout << "Enter a string: ";
+    cin >> str;
+
+    count(str);
+    backwards(str);
+
+    return 0;
+}
