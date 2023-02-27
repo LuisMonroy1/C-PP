@@ -1,0 +1,28 @@
+// Lect15_11.2_W11.2_Structure.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+struct carryonbag // Structure
+{
+	int item1;
+	float item2;
+	string item3;
+} s1, s2;
+
+
+int main()
+{	// Information for s1
+	s1.item1 = 10;
+	s1.item2 = 2.2;
+	s1.item3 = "Person 1";
+	// Information for s2
+	s2.item1 = 11;
+	s2.item2 = 2.4;
+	s2.item3 = "Person 2";
+
+	carryonbag s1, s2; // Calling the structure and s1 & s2
+
+	return 0;
+}
