@@ -1,0 +1,17 @@
+// Lect12_10.12_W8.2_Array.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+void print(int A[], int length)
+{
+	for (int n = 0; n < length; n++)
+		cout << A[n] << " ";
+	cout << "\n";
+}
+int main()
+{
+	int arr[] = { 5, 10, 15 };
+	print(arr, 3); //This is to change how many characters from the array wants to be displayed
+	return 0;
+}
