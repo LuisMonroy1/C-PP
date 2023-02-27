@@ -1,0 +1,29 @@
+// Lect13_10.26_W10.2_TwoDimArray.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+void print(int A[][3], int N, int M)
+{
+	int R, C;
+	for (R = 0; R < N; R++) // one for loop for rows
+	{
+		for (C = 0; C < M; C++) // one for loop for colums
+		{
+			cout << A[R][C];
+			if (R % 2 == 0 && C % 2 == 0)
+			{
+				cout << "\n";
+			}
+		}
+	}
+}
+
+int main()
+{
+	int arr[4][3] = {{ 12,29,11 }, { 25,25,13 }, { 24,64,67 }, { 11,18,14 } };
+
+	print(arr, 4, 3); //To print all the elemtns inside the array "arr"
+	return 0;
+}
