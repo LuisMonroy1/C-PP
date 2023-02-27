@@ -1,0 +1,35 @@
+// Lect18_11.14_W13.1_Polymorphism.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+/*
+Function Overloading : Function 
+overloading means one function 
+can perform many tasks.
+*/
+
+class Addition 
+{
+public:
+	int ADD(int X, int Y) // Function with parameter
+	{
+		return X + Y; // this function is performing addition of two Integer value
+	}
+	string ADD() 
+	{ // Function with same name but without parameter
+		string a = "HELLO";
+		string b = "SAM"; // in this function concatenation is performed
+		string c = a + b;
+		cout << c << endl;
+		return c;
+	}
+};
+int main(void) 
+{
+	Addition obj; // Object is created
+	cout << obj.ADD(128, 15) << endl; //first method is called
+	obj.ADD(); // second method is called
+	return 0;
+}
