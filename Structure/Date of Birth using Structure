@@ -1,0 +1,24 @@
+// Lect15_11.2_W11.2_Structure(ID,PIN,Major,Grade).cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+
+struct Day
+{
+    int month, date, year;
+};
+struct Student
+{
+    int rollno, age;
+    char name[80];
+    Day date_of_birth;
+    float marks;
+} s1, s3;
+
+int main()
+{
+    Student s;  // Structure variable of Student
+    s.date_of_birth.month = 11;
+    s.date_of_birth.date = 5;
+    s.date_of_birth.year = 1999;
+}
