@@ -1,0 +1,41 @@
+// Lect18_11.14_W13.1_FunctionOverriding.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+/*
+Function overriding: In function
+overriding, we give the new
+definition to base class function in
+the derived class.
+In function overriding, we have
+two definitions of the same
+function, one in the superclass
+and one in the derived class.
+*/
+
+class Animal 
+{
+public:
+	void function() 
+	{
+		cout << "Eating..." << endl;
+	}
+};
+class Man : public Animal
+{
+public:
+	void function()
+	{
+		cout << "Walking ..." << endl;
+	}
+};
+int main(void) 
+{
+	Animal A = Animal();
+	A.function(); //parent class object
+	Man m = Man();
+	m.function(); // child class object
+	return 0;
+}
