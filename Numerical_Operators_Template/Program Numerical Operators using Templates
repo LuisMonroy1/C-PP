@@ -1,0 +1,65 @@
+// Lect21_11.28_W15.1_TemplateNumericalOperators.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <class T> //Class template
+class Numerical_Operations 
+{
+private:
+	//int add, sub, mult, div; //Member Variables
+	int c;
+public:
+	T const& add(T const& a, T const& b); //Template function
+	T const& sub(T const& a, T const& b);
+	T const& mult(T const& a, T const& b);
+	T const& div(T const& a, T const& b);
+};
+template <typename T> //Fucntion as template
+inline T const& Numerical_Operations<T>::add(T const& a, T const& b) {
+	c = a + b;
+	return c;
+}
+template <typename T>
+inline T const& Numerical_Operations<T>::sub(T const& a, T const& b) {
+	c = a - b;
+	return c;
+}
+template <typename T>
+inline T const& Numerical_Operations<T>::mult(T const& a, T const& b) {
+	c = a * b;
+	return c;
+}
+template <typename T>
+inline T const& Numerical_Operations<T>::div(T const& a, T const& b) {
+	c = a / b;
+	return c;
+}
+int main() {
+	int a, b;
+	//cout << "Enter first number: ";
+	//cin >> a;
+	//cout << "Enter second number: ";
+	//cin >> b;
+	
+
+	Numerical_Operations<int> h;
+	Numerical_Operations<float> h1;
+	Numerical_Operations<string> h2;
+	Numerical_Operations<double> h3;
+	//Numerical_Operations<float> g;
+
+	cout << "The result of the addition intiger is: " << h.add(2, 4) << endl;
+
+	cout << "The result of the addition float is: " << h1.add(5.5, 6.8) << endl;
+
+	//cout << "The result of the addition string is: " << h2.add("Hello", "World") << endl;
+
+	cout << "The result of the addition double is: " << h3.add(22, 33) << endl;
+
+	
+
+	return 0;
+}
