@@ -1,0 +1,22 @@
+// Lect20_11.21_W14.1_WritingToFile.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include<iostream>
+#include <fstream>
+
+using namespace std;
+int main()
+{
+	ofstream myfile("new_file.txt");
+if (myfile.is_open())
+{
+	myfile << "Adding new stuff \n";
+	myfile << "This is another stuff that i want to write in this file. \n";
+	myfile.close();
+}
+else
+{
+	cout << "Unable to open the file";
+}
+	return 0;
+}
