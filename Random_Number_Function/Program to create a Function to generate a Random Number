@@ -1,0 +1,28 @@
+// Lect12_10.10_W7.2_RandNumGen.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+
+int rand1(int n); //Name of the function
+
+int main() {
+	int n, j;
+	int r;
+	srand(time(NULL));
+	cout << "Enter number of dice: ";
+	cin >> n;
+	for (j = 1; j <= n; j++) {
+		r = rand1(5) + 1;
+		cout << r << " ";
+	}
+	system("PAUSE");
+	return 0;
+}
+int rand1(int n) {
+	return rand() % n;
+}
