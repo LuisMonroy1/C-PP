@@ -1,0 +1,37 @@
+// Lect11_10.5_W7.2_Num(TooLowTooHigh)1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+
+#include<iostream>
+#include<cstdlib>
+#include <ctime>
+using namespace std;
+
+
+int main()
+{
+	//To get guess of the number
+	int n, n1;
+	cout << "Guess the Number: ";
+	cin >> n1;
+	//To generate random number
+	srand(time(0));
+	n = rand() % 91 + 10;
+
+	if (n1 > n)
+	{
+		cout << "Your number is too high \n";
+	}
+	else if (n1 < n)
+	{
+		cout << "Your number is too low \n";
+	}
+	else if (n1 == n)
+	{
+		cout << "Your number is Correct!! \n";
+		cout << "Game Over";
+	}
+	cout << "The randomly selected number is: " << n;
+	cout << "\n";
+	//return 0;
+}
